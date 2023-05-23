@@ -11,8 +11,7 @@ class RCLowPass(Circuit):
 
         self.fs = sample_rate
         self.cutoff = cutoff
-
-        self.C = 1e-6
+        self.C = 1e-6 
         self.R = 1.0 / (2 * np.pi * self.C * self.cutoff)
 
         self.R1 = Resistor(self.R)

@@ -11,17 +11,16 @@ class RCHighPass(Circuit):
 
         self.fs = sample_rate
         self.cutoff = 0
-
-        self.C = 0.14e-6
-        self.Z = 10000
-
+        self.Z = 1000 
+        self.C =  0.14e-6
+        R1 = 1000 
         self.Rz = Resistor(self.Z)
         self.C1 = Capacitor(self.C, self.fs)
-        self.R1 = Resistor(1000)
+        self.R1 = Resistor(R1)
         self.S2 = SeriesAdaptor(self.Rz, self.C1)
         self.P1 = ParallelAdaptor(self.S2, self.R1)
-
-        self.Vs = ResistiveVoltageSource(75)
+        VS = 75
+        self.Vs = ResistiveVoltageSource(VS)
         self.S1 = SeriesAdaptor(self.P1, self.Vs)
 
         super().__init__(self.Vs, self.Vs, self.Rz)
