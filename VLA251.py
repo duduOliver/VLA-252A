@@ -1,14 +1,8 @@
-import BPF
+from PyQt5.QtWidgets import QApplication
+from VLA251_GUI import MainWindow
 
-class VLA251:
-    # TODO Implement VLA251 class
-    def __init__():
-        # TODO
-        # BPF_array
-        # Gain_array
-        pass
-  
-    def __call__():
-        # TODO
-        # Processing
-        pass
+if __name__ == "__main__":
+    app = QApplication([])
+    window = MainWindow()
+    window.show()
+    app.exec_()
