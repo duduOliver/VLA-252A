@@ -16,29 +16,6 @@
    <li>Python v3.11</li>
    <li>Supercollider v3.13</li>
 
-  <h2>Structure</h2>
-  <pre>
-  <code>
-  ./VLA-252A/
-  ├── LC_BPF.py
-  ├── LCSecOrd_BPF.py
-  ├── LCThirdOrd_BPF.py
-  ├── main.py
-  ├── RC_hpf.py
-  ├── RC_lpf.py
-  ├── test
-  │   ├── test_LC_BPF.py
-  │   ├── test_LCSecOrd_BPF.py
-  │   ├── test_LCThirdOrd_BPF.py
-  │   └── test_VLA251.py
-  ├── utils
-  │   ├── new_plot_freqz.py
-  │   └── octave_distance.py
-  ├── VLA251_GUI.py
-  └── VLA251.py
-  </code>
-  </pre>
-
   <h2>Results</h2>
   <p></p>
 
