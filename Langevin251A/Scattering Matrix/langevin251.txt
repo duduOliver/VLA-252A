@@ -1,0 +1,9 @@
+//ThisscatteringmatrixwasderivedusingtheR-Solverpythonscript(https://github.com/jatinchowdhury18/R-Solver),
+//invokedwithcommand:r_solver.pylangevin.txt--adapt0--outscat_mat_1.txt
+constautoS_matrix[5][5]=[[0,-1,-Rd/(R3+Rc+Rd),-(R3+Rc)/(R3+Rc+Rd),-Rd/(R3+Rc+Rd)],
+[-(R3*Rb+Rb*Rc+Rb*Rd)/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),(R3+Rc)*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-Rb*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-(R3*Rb+Rb*Rc)/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-Rb*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd)],
+[-Rc*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-Rc*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),(R3*R3*Rb-Rb*Rc*Rc+(R3+Rb)*Rd*Rd+(R3*R3+2*R3*Rb-Rc*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd),(2*R3*Rb*Rc+2*Rb*Rc*Rc+((R3+2*Rb)*Rc+Rc*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd),-(2*R3*Rb*Rc+2*Rb*Rc*Rc+Rc*Rd*Rd+2*((R3+Rb)*Rc+Rc*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd)],
+[-(R3+Rc)*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-(R3+Rc)*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),((R3+2*Rb+Rc)*Rd*Rd+2*(R3*Rb+Rb*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd),(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc-(R3+Rb+Rc)*Rd*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd),((R3+2*Rb+Rc)*Rd*Rd+2*(R3*Rb+Rb*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd)],
+[-R3*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-R3*Rd/(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd),-(2*R3*R3*Rb+2*R3*Rb*Rc+R3*Rd*Rd+2*(R3*R3+R3*Rb+R3*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd),(2*R3*R3*Rb+2*R3*Rb*Rc+(R3*R3+2*R3*Rb+R3*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd),-(R3*R3*Rb-Rb*Rc*Rc-(Rb+Rc)*Rd*Rd+(R3*R3-2*Rb*Rc-Rc*Rc)*Rd)/(R3*R3*Rb+2*R3*Rb*Rc+Rb*Rc*Rc+(R3+Rb+Rc)*Rd*Rd+(R3*R3+2*R3*Rb+2*(R3+Rb)*Rc+Rc*Rc)*Rd)]];
+
+Ra=(R3*Rb+Rb*Rc+(R3+Rb+Rc)*Rd)/(R3+Rc+Rd)
