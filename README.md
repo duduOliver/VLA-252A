@@ -77,7 +77,7 @@
   
   <h2>Installation and Usage</h2>
 
-  <p>For more information about the usage of the plugin you can check the  <a href="User Manual/">User Manual</a></p>
+  <p>For more information about the usage of the plugin you can check the  <a href="Documentation/UserManual.docx.pdf/">User Manual</a></p>
   
   <h3>Python prototype</h3>
   <p>To set up and install the Python prototype, please follow the instructions provided below:</p>
@@ -97,7 +97,7 @@
 
   <h3> Supercollider</h3>
 <ol>
-  <li>Copy the folder named "Langevin252A" located in <a href="Supercollider/">Supercollider</a>, and paste it into the extensions folder of your SuperCollider installation on your computer.</li>
+  <li>Copy the folder named "Langevin252A" located in <a href="sc/Supercollider/">Supercollider</a>, and paste it into the extensions folder of your SuperCollider installation on your computer.</li>
   <li>To find the location of the extension folder, open SuperCollider and evaluate the following line of code: <code>Platform.userExtensionDir</code>.</li>
   <li>Inside the extension folder, you will find the plugin file, an audio file for the tutorial, and a tutorial named "langevinTest".</li>
   <li>For the final part of the tutorial (VarGui), you need to install the "MiSCellaneous" library from the Quarks system.</li>
