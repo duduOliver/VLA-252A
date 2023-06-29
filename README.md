@@ -21,28 +21,63 @@
   <pre>
   <code>
   ./VLA-252A/
-  ├── LC_BPF.py
-  ├── LCSecOrd_BPF.py
-  ├── LCThirdOrd_BPF.py
-  ├── main.py
-  ├── RC_hpf.py
-  ├── RC_lpf.py
-  ├── test
-  │   ├── test_LC_BPF.py
-  │   ├── test_LCSecOrd_BPF.py
-  │   ├── test_LCThirdOrd_BPF.py
-  │   └── test_VLA251.py
-  ├── utils
-  │   ├── new_plot_freqz.py
-  │   └── octave_distance.py
-  ├── VLA251_GUI.py
-  └── VLA251.py
+  ├── Demos
+  │   ├── Prototype Demo
+  │   ├──RealTimee Demo
+  ├── Documentation
+  │   ├── User Manual
+  │   ├── VLA252A
+  ├── Langevin251
+  │   ├── LTSpice
+      │   ├── HiCutLoBoost.asc
+      │   ├── HiLoBoost.asc
+      │   ├── HiLoCut.asc
+      │   ├── LoCutHiBoost.asc
+      │   ├── Simplifiedcircuit.asc
+  │   ├── Netlist
+      │   ├── HiCutLoBoost.txt
+      │   ├── HiLoBoost.txt
+      │   ├── HiLoCut.txt
+      │   ├── LoCutHiBoost.txt
+      │   ├── Simplifiedcircuit.txt
+  │   ├── Scattering Matrix
+      │   ├── HiCutLoBoost.txt
+      │   ├── HiLoBoost.txt
+      │   ├── HiLoCut.txt
+      │   ├── LoCutHiBoost.txt
+      │   ├── Simplifiedcircuit.txt
+  │   ├─ Separated Ports
+      │   ├── HiCutLoBoost.py
+      │   ├── HiLoBoost.py
+      │   ├── HiLoCut.py
+      │   ├── LoCutHiBoost.py
+  │   ├──Sounds / Input
+      │   ├── piano.wav
+  │   ├── Langevin.py
+  │   ├── utils.py
+  ├── sc
+      │   ├── Prototype
+          │   ├── utils.py
+          │   ├── LC_SecondOrd_BPF.py
+          │   ├── LC_ThirdOrd_BPF.py
+          │   ├── LC_BPF.py
+          │   ├── RC_hpf.py
+          │   ├── RC_lpf.py
+          │   ├── VLA252.py
+          │   ├── VLA252_GUI.py
+          │   ├── environment.yml
+          │   ├── main.py
+      │   ├── Supercollider
+          │   ├── Langevin252A.sc
+          │   ├── langevinTest.scd
+          │   ├── somiomio.wav
+
   </code>
   </pre>
   
   <h2>Installation and Usage</h2>
 
-  <p>For more information about the usage of the plugin you can check the  <a href="supercollider/">user manual</a></p>
+  <p>For more information about the usage of the plugin you can check the  <a href="User Manual/">User Manual</a></p>
   
   <h3>Python prototype</h3>
   <p>To set up and install the Python prototype, please follow the instructions provided below:</p>
@@ -62,7 +97,7 @@
 
   <h3> Supercollider</h3>
 <ol>
-  <li>Copy the folder named "Langevin252A" located in <a href="supercollider/">supercollider</a>, and paste it into the extensions folder of your SuperCollider installation on your computer.</li>
+  <li>Copy the folder named "Langevin252A" located in <a href="Supercollider/">Supercollider</a>, and paste it into the extensions folder of your SuperCollider installation on your computer.</li>
   <li>To find the location of the extension folder, open SuperCollider and evaluate the following line of code: <code>Platform.userExtensionDir</code>.</li>
   <li>Inside the extension folder, you will find the plugin file, an audio file for the tutorial, and a tutorial named "langevinTest".</li>
   <li>For the final part of the tutorial (VarGui), you need to install the "MiSCellaneous" library from the Quarks system.</li>
