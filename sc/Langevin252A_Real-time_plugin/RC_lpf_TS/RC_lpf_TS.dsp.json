@@ -1,0 +1,73 @@
+{
+	"name": "RC_lpf_TS",
+	"filename": "RC_lpf_TS.dsp",
+	"version": "2.50.6",
+	"compile_options": "-a supercollider.cpp -lang cpp -i -es 1 -mcd 16 -single -ftz 0",
+	"library_list": ["/Users/macbook/Desktop/Faust-2.50.6/share/faust/stdfaust.lib","/Users/macbook/Desktop/Faust-2.50.6/share/faust/wdmodels.lib","/Users/macbook/Desktop/Faust-2.50.6/share/faust/maths.lib","/Users/macbook/Desktop/Faust-2.50.6/share/faust/platform.lib","/Users/macbook/Desktop/Faust-2.50.6/share/faust/signals.lib","/Users/macbook/Desktop/Faust-2.50.6/share/faust/basics.lib"],
+	"include_pathnames": ["/Users/macbook/Desktop/Faust-2.50.6/share/faust","/usr/local/share/faust","/usr/share/faust",".","/Users/macbook/Desktop/Faust_files/RC_lpf_TS"],
+	"inputs": 1,
+	"outputs": 1,
+	"meta": [ 
+		{ "basics.lib/name": "Faust Basic Element Library" },
+		{ "basics.lib/version": "0.8" },
+		{ "compile_options": "-a supercollider.cpp -lang cpp -i -es 1 -mcd 16 -single -ftz 0" },
+		{ "filename": "RC_lpf_TS.dsp" },
+		{ "maths.lib/author": "GRAME" },
+		{ "maths.lib/copyright": "GRAME" },
+		{ "maths.lib/license": "LGPL with exception" },
+		{ "maths.lib/name": "Faust Math Library" },
+		{ "maths.lib/version": "2.5" },
+		{ "name": "RC_lpf_TS" },
+		{ "platform.lib/name": "Generic Platform Library" },
+		{ "platform.lib/version": "0.2" },
+		{ "signals.lib/name": "Faust Signal Routing Library" },
+		{ "signals.lib/version": "0.3" },
+		{ "wdmodels.lib/builddown:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/builddown:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/builddown:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/buildout:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/buildout:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/buildout:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/buildtree:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/buildtree:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/buildtree:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/capacitor_Vout:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/capacitor_Vout:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/capacitor_Vout:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/getres:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/getres:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/getres:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/name": "Faust Wave Digital Model Library" },
+		{ "wdmodels.lib/parres:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/parres:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/parres:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/resistor:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/resistor:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/resistor:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/series:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/series:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/series:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/u_voltage:author": "Dirk Roosenburg" },
+		{ "wdmodels.lib/u_voltage:copyright": "Copyright (C) 2020 by Dirk Roosenburg <dirk.roosenburg.30@gmail.com>" },
+		{ "wdmodels.lib/u_voltage:license": "MIT-style STK-4.3 license" },
+		{ "wdmodels.lib/version": "0.2.1" }
+	],
+	"ui": [ 
+		{
+			"type": "vgroup",
+			"label": "RC_lpf_TS",
+			"items": [ 
+				{
+					"type": "hslider",
+					"label": "cutoff",
+					"shortname": "cutoff",
+					"address": "/RC_lpf_TS/cutoff",
+					"init": 1000,
+					"min": 1,
+					"max": 24000,
+					"step": 1
+				}
+			]
+		}
+	]
+}

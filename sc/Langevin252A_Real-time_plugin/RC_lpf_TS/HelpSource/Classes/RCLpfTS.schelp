@@ -1,0 +1,23 @@
+CLASS::RCLpfTS
+SUMMARY::A Faust plugin
+RELATED::Classes/UGen
+CATEGORIES::Categories>Faust
+DESCRIPTION::
+
+This plugin has 1 inputs and 1 outputs.
+A Faust plugin
+
+CLASSMETHODS::
+METHOD::ar,kr
+
+ARGUMENT::cutoff
+Minimum value: 1
+Maximum value: 24000
+
+EXAMPLES::
+
+code::
+// TODO
+::
+
+KEYWORD::faust,plugin
